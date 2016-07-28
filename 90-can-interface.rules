@@ -1,0 +1,2 @@
+# run setup script for Peak can interfaces
+KERNEL=="can[0-9]", SUBSYSTEM=="net", SUBSYSTEMS=="usb", DRIVERS=="peak_usb", RUN+="/usr/local/bin/setup_can_iface.sh %k"
